@@ -128,7 +128,7 @@ nav {
     font-size: xx-large;
 }
 
-.rightSection {
+.blankSection {
     background-color: white;
     height: 300px;
     width: 550px;
@@ -194,14 +194,24 @@ nav {
     border-radius: 10px;
     font-weight: bolder;
 }
-.mentor-details{
+.mentor{
     height: 100vh;
     width: 100vw;
     margin-top: 100px;
+    /* display: flex; */
 }
 .know-your-mentor{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 27px;
+}
+#mentor-name{
+    font-weight: bold;
+}
+.points{
+    display: flex;
+}
+.mentor-details{
+    display: flex;
 }
