@@ -78,9 +78,11 @@ nav {
 .nav-center p {
     text-align: center;
 }
-.number{
+
+.timer {
     margin-left: 20px;
 }
+
 .nav-right {
     display: flex;
     align-items: center;
@@ -96,18 +98,19 @@ nav {
 }
 
 
-.main {
+.parent-main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 500px;
-    width: 100%;
+    position: relative;
+    height: 80vh;
+    width: 100vw;
     margin-top: 0px;
     background-color: var(--darkblue);
 }
 
 
-.leftSection {
+.parent-leftSection {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -116,27 +119,34 @@ nav {
     width: 38rem;
 }
 
-.text {
+.parent-section-text {
     color: white;
     width: 100%;
     height: 238px;
 }
-.text span{
+
+.parent-section-text span {
     color: var(--yellow);
 }
-.text h1{
+
+.parent-section-text h1 {
     font-size: xx-large;
 }
 
 .blankSection {
-    background-color: white;
+    /* background-color: white;
     height: 300px;
+    width: 550px;
+    border: 2px solid black;
+    border-radius: 18px; */
+    background-color: white;
+    height: 60%;
     width: 550px;
     border: 2px solid black;
     border-radius: 18px;
 }
 
-.bar {
+.float-bar {
     height: 60px;
     width: 510px;
     display: flex;
@@ -146,17 +156,19 @@ nav {
     margin-top: 15px;
 }
 
-.bar h6 {
+.float-bar h6 {
     width: 143px;
     font-weight: 400;
     font-size: small;
     color: grey;
     margin-left: 15px;
 }
+
 .user-contact {
+    /* display: none; */
     position: absolute;
     border-radius: 1rem;
-    top: 438px;
+    top: 500px;
     left: 13%;
     width: 74%;
     height: 120px;
@@ -167,16 +179,17 @@ nav {
     background-color: whitesmoke;
     z-index: 0;
 }
-.user-contact .lower-text {
+
+.user-contact-lower-text {
     display: flex;
     margin-top: 28px;
 }
 
-.user-contact .lower-text div {
+.user-contact-lower-text div {
     margin-right: 1rem;
 }
 
-.user-contact .lower-text div input {
+.user-contact-lower-text div input {
     height: 50px;
     width: 17vw;
     border-radius: 0.5rem;
@@ -185,7 +198,8 @@ nav {
     border: 0.5px solid #93aac2;
     cursor: pointer;
 }
-.btn1{
+
+.btn-pay {
     color: var(--certified-font);
     background-color: var(--yellow);
     height: 50px;
@@ -194,24 +208,76 @@ nav {
     border-radius: 10px;
     font-weight: bolder;
 }
-.mentor{
+
+.mentor {
     height: 100vh;
     width: 100vw;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    background-color: var(--border);
     /* display: flex; */
 }
-.know-your-mentor{
+
+.know-your-mentor {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 27px;
+    height: 70px;
+    padding-top: 70px;
+    /* position: absolute; */
 }
-#mentor-name{
+
+#mentor-name {
     font-weight: bold;
 }
-.points{
+
+.mentor-details {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+    height: 90%;
+    width: 100%;
 }
-.mentor-details{
+
+.left-mentor {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: start;
+    width: 50vw;
+    height: 390px; */
+    margin-left: 10%;
+    width: 50vw;
+    height: 100%;
+
+}
+
+.learn-from {
+    background-color: var(--yellow);
+    height: 60px;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: none;
+    width: 550px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.right-mentor {
     display: flex;
+    width: 50vw;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.right-mentor ul{
+    display: flex;
+    flex-direction: column;
+}
+.right-mentor ul li{
+margin-bottom: 20px;
 }
