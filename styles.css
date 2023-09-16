@@ -306,6 +306,8 @@ nav {
 .main-container {
     height: 100vh;
     background-color: #e8ecf2;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -428,7 +430,7 @@ body {
     background: white;
     border-radius: 12px;
     bottom: 270px;
-
+}
 
 
 .box-cantainer {
@@ -526,11 +528,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /* choose section started */
 .choose {
     background: #E6ECF3;
 
 }
+
 .choose-us h1 {
     display: flex;
     justify-content: center;
@@ -562,9 +566,9 @@ body {
     align-items: center;
     margin-bottom: 5%;
 }
-.choose-box h3{
+
+.choose-box h3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
