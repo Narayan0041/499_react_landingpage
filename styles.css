@@ -561,7 +561,6 @@ body {
     width: 240px;
     background-color: white;
     border-radius: 12px;
-
     z-index: 1000%;
     align-items: center;
     margin-bottom: 5%;
@@ -571,4 +570,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* choose section end */
+.detail-info {
+    display: flex;
+    justify-content: center;
+    background-color: #E6ECF3;
+    height: 80vh;
+}
+
+.tech-detail {
+    background-color: #c3cedc;
+    height: 24vh;
+    width: 90vh;
+
+}
+
+
+.detaling ul{
+    padding: 0;
+}
+.detaling ul li {
+    display: inline-block;
+    color: #df2e2e;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 7vh;
+    text-align: center;
+    
+}
+.detaling ul li p{
+  color:#474545;
+  margin: 0 2vh;
+  margin-top: 2vh;
+  font-weight: 150;
+  font-size: 17px;
 }
