@@ -161,23 +161,22 @@ nav {
 }
 
 .float-bar {
-    height: 60px;
-    width: 510px;
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    height: 50px;
+    width: 85%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 10px;
+}
+.icons{
     display: flex;
     align-items: center;
-    background: #6c9cef;
-    border-radius: 10px;
-    margin-top: 15px;
+    justify-content: space-evenly;
+    width: 50%;
 }
-
-.float-bar h6 {
-    width: 143px;
-    font-weight: 400;
-    font-size: small;
-    color: white;
-    margin-left: 15px;
-}
-
 .user-contact {
     /* display: none; */
     position: absolute;
@@ -379,31 +378,46 @@ body {
     margin-top: 60px;
 }
 
-.box1 {
-    background: white;
+.group3box {
+    display: flex;
+    gap: 10px;
+}
 
+.group2box {
+    display: flex;
+    gap: 10px;
+}
+
+/* .box1 {
+    background: white;
     border-radius: 12px;
     bottom: 270px;
-    width: 8%;
-
     left: 200px;
     padding-bottom: 90px;
     height: 150px;
-    width: 270px;
+    width: 350px;
     padding: 0px 24px;
     text-align: center;
     z-index: 1000%;
     background-color: white;
+} */
+.box1 {
+    background-color: white;
+    height: 140px;
+    width: 340px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .box1 p {
-    font-size: 90%;
+    font-size: 16px;
     color: #757678;
     margin-bottom: 20px;
 }
 
-.box1 h3 {
-    font-size: large;
+.box1 h2 {
+    font-size: 20px;
 }
 
 .bonuses h1 {
@@ -545,6 +559,7 @@ body {
 
 .choose-us h1 span {
     color: #ffd124;
+    font-family: 'Dancing Script', cursive;
 }
 
 .your-choose {
@@ -571,6 +586,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /* choose section end */
 .detail-info {
     display: flex;
@@ -587,9 +603,10 @@ body {
 }
 
 
-.detaling ul{
+.detaling ul {
     padding: 0;
 }
+
 .detaling ul li {
     display: inline-block;
     color: #df2e2e;
@@ -597,12 +614,13 @@ body {
     font-size: large;
     margin-top: 7vh;
     text-align: center;
-    
+
 }
-.detaling ul li p{
-  color:#474545;
-  margin: 0 2vh;
-  margin-top: 2vh;
-  font-weight: 150;
-  font-size: 17px;
+
+.detaling ul li p {
+    color: #474545;
+    margin: 0 2vh;
+    margin-top: 2vh;
+    font-weight: 150;
+    font-size: 17px;
 }
