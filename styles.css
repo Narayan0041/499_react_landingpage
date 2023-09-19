@@ -60,8 +60,13 @@ nav {
     justify-content: space-between;
     font-weight: bold;
     height: 100%;
-    width: 25%;
+    
+    
 
+}
+.nav-center p{
+    font-size: 15px;
+    
 }
 
 .nav-center input {
@@ -172,12 +177,14 @@ nav {
     background-color: white;
     border-radius: 10px;
 }
-.icons{
+
+.icons {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 50%;
 }
+
 .user-contact {
     /* display: none; */
     position: absolute;
@@ -228,7 +235,7 @@ nav {
 }
 
 .mentor {
-    height: 100vh;
+    height: 50vw;
     width: 100vw;
     background-color: #f3f9ff;
 }
@@ -302,12 +309,6 @@ nav {
     src: url(/PlusJakartaSans-VariableFont_wght.ttf);
 }
 
-
-.main-container {
-    height: 100vh;
-    background-color: #e8ecf2;
-}
-
 body {
     height: 100%;
     width: 100%;
@@ -319,10 +320,11 @@ body {
 .main-container {
     height: 100vh;
 
-    background-color: #e8ecf2;
+    background-color: #f3f9ff;
 
-    /* enrolled section start  */
 }
+
+/* enrolled section start  */
 
 .enroll {
     height: 60px;
@@ -427,8 +429,8 @@ body {
     display: flex;
     justify-content: center;
     font-size: 6vh;
-    
-    
+
+
 }
 
 .bonuses-box {
@@ -437,17 +439,17 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-left: 200px;
-    width: 70%;
-    
-    
+    margin-left: 150px;
+    width: 80%;
+
+
 }
 
 .box-cantainer {
     background: white;
     border-radius: 12px;
     /* bottom: 270px; */
-    
+
 }
 
 
@@ -464,22 +466,23 @@ body {
     text-align: center;
     z-index: 1000%;
     background-color: white;
-    
-    
+
+
 }
-.box-cantainer h2{
+
+.box-cantainer h2 {
     font-size: 22px;
-    font-weight:600;
+    font-weight: 600;
     text-align: center;
     margin-top: 5vh;
-    
+
 }
 
 .bonuse-cantainer {
-    background-color: #E6ECF3;
+    background-color: #f3f9ff;
     height: 100vh;
     margin-top: -34px;
-    
+
 }
 
 .box-cantainer p {
@@ -487,10 +490,28 @@ body {
     color: #757678;
     margin-bottom: 20px;
 }
+.register-tech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 550;
+    font-size: 23px;
+    margin-top: 7vh;
+}
+.register-tech span{
+    color: #f3be00;
+}
+.register-tech .discount{
+    color: #df2e2e;
+}
+.register-tech .discount-just-at{
+    color: rgb(38, 198, 38);
+}
 
 .contact-us {
     background-color: #2E2F2F;
-    height: 30vh;
+    height: 35vh;
 }
 
 .contact {
@@ -502,24 +523,26 @@ body {
     position: absolute;
     left: 18%;
     margin-top: 55px;
-    font-size: 33px;
+    font-size: 40px;
 }
 
 .contact p {
     position: absolute;
     left: 18%;
-    margin-top: 8%;
+    margin-top: 9%;
+    font-size: 20px;
 
 }
 
 .contact-button {
     position: absolute;
-    left: 53%;
+    left: 60%;
     margin-top: 6%;
-    padding: 18px 50px;
+    padding: 25px 70px;
     border-radius: 8px;
     font-weight: bold;
-    background-color: #ffd124;
+    font-size: large;
+    background-color: #f3be00;
 }
 
 .logo img {
@@ -556,7 +579,7 @@ body {
 
 /* choose section started */
 .choose {
-    background: #E6ECF3;
+    background: #f3f9ff;
 
 }
 
@@ -599,18 +622,27 @@ body {
 }
 
 /* choose section end */
+.class-detail{
+    height: 100%;
+    width: 100%;
+}
 .detail-info {
     display: flex;
     justify-content: center;
-    background-color: #E6ECF3;
-    height: 80vh;
+    background-color: white;
+    position: absolute;
+    left: 25vw;
+    
+    
+    
 }
 
 .tech-detail {
-    background-color: #c3cedc;
+    background-color: #f3f9ff;
     height: 24vh;
     width: 90vh;
-
+    
+    
 }
 
 
@@ -634,4 +666,11 @@ body {
     margin-top: 2vh;
     font-weight: 150;
     font-size: 17px;
+}
+
+.class-img img{
+    height: 40vw;
+    width: 100vw;
+    margin-top: 20px;
+    
 }
