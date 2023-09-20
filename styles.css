@@ -504,6 +504,7 @@ body {
 }
 .register-tech .discount{
     color: #df2e2e;
+    text-decoration:line-through;
 }
 .register-tech .discount-just-at{
     color: rgb(38, 198, 38);
@@ -582,13 +583,16 @@ body {
     background: #f3f9ff;
 
 }
+.choose-us{
+    margin-top: -36px;
+}
 
 .choose-us h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 6vh;
-
+     padding-top: 30px;
 }
 
 .choose-us h1 span {
@@ -606,25 +610,48 @@ body {
 }
 
 .choose-box {
-    height: 120px;
-    width: 240px;
+    height: 130px;
+    width: 260px;
     background-color: white;
     border-radius: 12px;
     z-index: 1000%;
     align-items: center;
     margin-bottom: 5%;
 }
-
-.choose-box h3 {
+.choose-box .learn-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose-box .live-logo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.choose-box .mentor-logo{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.choose-box .job-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.choose-box h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
 /* choose section end */
 .class-detail{
-    height: 100%;
-    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 .detail-info {
     display: flex;
@@ -632,6 +659,7 @@ body {
     background-color: white;
     position: absolute;
     left: 25vw;
+    
     
     
     
@@ -644,33 +672,33 @@ body {
     
     
 }
-
-
-.detaling ul {
-    padding: 0;
+.detaling{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 160px;
+    width: 100%;
+    
 }
 
-.detaling ul li {
-    display: inline-block;
+.logo-detailing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detaling .logo-days {
+    font-size: 3vh;
     color: #df2e2e;
     font-weight: bold;
-    font-size: large;
-    margin-top: 7vh;
-    text-align: center;
-
 }
 
-.detaling ul li p {
-    color: #474545;
-    margin: 0 2vh;
-    margin-top: 2vh;
-    font-weight: 150;
-    font-size: 17px;
-}
+
+
 
 .class-img img{
     height: 40vw;
     width: 100vw;
-    margin-top: 20px;
+    /* margin-top: 40px;    */
     
 }
