@@ -11,6 +11,16 @@
     --span-color: rgb(232, 196, 12);
 }
 
+@font-face {
+    font-family: satisfy;
+    src: url(/Satisfy-Regular\ \(1\).ttf);
+}
+
+@font-face {
+    font-family: plus;
+    src: url(/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
 * {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -25,6 +35,8 @@ body {
 
 }
 
+
+/* nav section started */
 nav {
     display: flex;
     height: 70px;
@@ -95,6 +107,8 @@ nav {
 .timer {
     margin-left: 20px;
     display: flex;
+    gap: 5px;
+
 }
 
 .nav-right {
@@ -109,9 +123,12 @@ nav {
     padding: 15px 0px 15px 0px;
     font-weight: bolder;
     font-size: 15px;
+    cursor: pointer;
 }
 
+/* nav section end */
 
+/* parent main section started */
 .parent-main {
     display: flex;
     align-items: center;
@@ -158,6 +175,10 @@ nav {
     margin-top: 0px;
 }
 
+/* parent main section end */
+
+
+
 .blankSection {
     background-color: white;
     height: 75%;
@@ -167,6 +188,7 @@ nav {
     /* margin-right: 140px; */
 }
 
+/* float bar section started */
 .float-bar {
     display: flex;
     font-size: 25px;
@@ -175,9 +197,15 @@ nav {
     width: 85%;
     align-items: center;
     justify-content: space-around;
-    background-color: white;
+    background-color:  rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+
 }
+.float-bar{
+    background-color:white;
+    opacity: 0.5;
+}
+
 
 .icons {
     display: flex;
@@ -186,6 +214,9 @@ nav {
     width: 50%;
 }
 
+/* float bar end */
+
+/* user contact started */
 .user-contact {
     /* display: none; */
     position: absolute;
@@ -223,7 +254,38 @@ nav {
     border: 0.5px solid #93aac2;
     cursor: pointer;
 }
+.phone-input-wrapper {
+    display: inline-block;
+        position: relative;
+        width: 25%;
+}   
 
+
+.country-code {
+    position: absolute;  
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #555; 
+    pointer-events: none; 
+    
+    border-right: 0.5px solid #93aac2;
+}
+
+input[type="tel"] {
+    padding-left: 30px;
+    
+}   
+ ::placeholder{
+    position: absolute;
+    left: 5vh;
+    font-size: medium;
+    
+}
+
+/* user contact end */
+
+/* pay button started */
 .btn-pay {
     color: var(--certified-font);
     background-color: #f3be00;
@@ -233,8 +295,10 @@ nav {
     border-radius: 10px;
     font-weight: bolder;
     font-size: 19px;
+    cursor: pointer;
 }
 
+/* pay button end */
 .mentor {
     height: 50vw;
     width: 100vw;
@@ -279,6 +343,7 @@ nav {
     width: 550px;
     font-size: x-large;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .right-mentor {
@@ -300,37 +365,29 @@ nav {
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
-@font-face {
-    font-family: satisfy;
-    src: url(/Satisfy-Regular\ \(1\).ttf);
-}
 
-@font-face {
-    font-family: plus;
-    src: url(/PlusJakartaSans-VariableFont_wght.ttf);
-}
-
-body {
-    height: 100%;
-    width: 100%;
-    font-family: plus;
-    overflow-x: hidden;
-
-}
 
 .main-container {
     height: 100vh;
-
-    background-color: #f3f9ff;
-
+    background-image: url(background-react-logo.svg);
+    background-repeat: no-repeat;
+    /* background-position: left center, right center; */
+    /* background-size: 40vw, 40vw;  */
+    /* background-image: linear-gradient(to right, transparent 0%, transparent 50%, url('background-react-logo.svg') 50%, url('background-react-logo.svg') 100%); */
+    /* position: absolute;   */
 }
+
+
+
+
+
 
 /* enrolled section start  */
 
 .enroll {
     height: 60px;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     padding-top: 90px;
     text-align: center;
 }
@@ -359,6 +416,7 @@ body {
     text-align: center;
     font-size: 30px;
     color: #2e2e2e;
+
 }
 
 .information span {
@@ -508,7 +566,7 @@ body {
 
 .register-tech .discount {
     color: #df2e2e;
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
 .register-tech .discount-just-at {
@@ -549,6 +607,7 @@ body {
     font-weight: bold;
     font-size: large;
     background-color: #f3be00;
+    cursor: pointer;
 }
 
 .logo img {
@@ -588,7 +647,8 @@ body {
     background: #f3f9ff;
 
 }
-.choose-us{
+
+.choose-us {
     margin-top: -36px;
 }
 
@@ -597,7 +657,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 6vh;
-     padding-top: 30px;
+    padding-top: 30px;
 }
 
 .choose-us h1 span {
@@ -623,28 +683,32 @@ body {
     align-items: center;
     margin-bottom: 5%;
 }
-.choose-box .learn-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.choose-box .live-logo{
+
+.choose-box .learn-logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.choose-box .mentor-logo{
-    display:flex ;
-    justify-content: center;
-    align-items: center;
-}
-.choose-box .job-logo{
+.choose-box .live-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
+.choose-box .mentor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-box .job-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .choose-box h3 {
     display: flex;
     justify-content: center;
@@ -653,16 +717,11 @@ body {
 }
 
 /* choose section end */
-<<<<<<< HEAD
-.class-detail{
+.class-detail {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-=======
-.class-detail {
-    height: 100%;
-    width: 100%;
->>>>>>> ee5090dff4a2756b4f7d003d7bf0774ee94341db
+
 }
 
 .detail-info {
@@ -671,35 +730,36 @@ body {
     background-color: white;
     position: absolute;
     left: 25vw;
-<<<<<<< HEAD
-    
-    
-    
-    
-=======
 
 
 
->>>>>>> ee5090dff4a2756b4f7d003d7bf0774ee94341db
+
+
+
+
 }
 
-.tech-detail {
+.tech-detail-box {
     background-color: #f3f9ff;
-    height: 24vh;
-    width: 90vh;
-
+    height: 27vh;
+    width: 100vh;
+    position: absolute;
+    left: 10px;
+    top: -30px;
+    border-radius: 5px;
 
 }
-.detaling{
+
+.detaling {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 160px;
-    width: 100%;
-    
+    margin-top: 30px;
+
+
 }
 
-.logo-detailing{
+.logo-detailing {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -714,14 +774,9 @@ body {
 
 
 
+
 .class-img img {
     height: 40vw;
     width: 100vw;
-<<<<<<< HEAD
-    /* margin-top: 40px;    */
-    
-=======
-    margin-top: 20px;
 
->>>>>>> ee5090dff4a2756b4f7d003d7bf0774ee94341db
 }
